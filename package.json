@@ -1,0 +1,35 @@
+{
+  "name": "find-my-songs-server",
+  "version": "1.0.0",
+  "description": "Find My Songs is an app that provides a search mechanism for songs and artists.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilsonviana/find-my-songs-server.git"
+  },
+  "keywords": [
+    "search",
+    "music",
+    "songs",
+    "artist",
+    "spotify",
+    "node",
+    "express"
+  ],
+  "author": "Gilson Viana <vianawebdev@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gilsonviana/find-my-songs-server/issues"
+  },
+  "homepage": "https://github.com/gilsonviana/find-my-songs-server#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
