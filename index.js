@@ -42,7 +42,12 @@ const getSpotifyAccessToken = async (req, res, next) => {
     next();
 };
 
-// test
+/**
+ * Perform a query towards spotify server
+ * 
+ * @param String type filter for search i.e track,album,artist
+ * @param String q    search query 
+ */
 app.get('/search/:type/:q', [getSpotifyAccessToken], async (req, res) => {
     let type = req.params.type,
         query = req.params.q;       
