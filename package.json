@@ -4,6 +4,7 @@
   "description": "Find My Songs is an app that provides a search mechanism for songs and artists.",
   "main": "index.js",
   "scripts": {
+    "start": "npm install",
     "dev": "nodemon"
   },
   "repository": {
