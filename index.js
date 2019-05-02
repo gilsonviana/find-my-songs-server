@@ -1,10 +1,12 @@
 const express    = require('express'),
       bodyParser = require('body-parser'),
       axios      = require('axios'),
+      cors       = require('cors'),
       keys       = require('./config/keys');
 
 const app = express();
 
+app.use(cors());
 /**
  * parse application/x-www-form-urlencoded
  */
@@ -51,7 +53,9 @@ const getSpotifyAccessToken = async (req, res, next) => {
 app.get('/search/:type/:q', [getSpotifyAccessToken], async (req, res) => {
     let type = req.params.type,
         query = req.params.q;       
-    
+        
+        console.log(req.params);
+        
     const spotifyResponse = await axios({
         method: 'GET',
         url: `https://api.spotify.com/v1/search?q=${query}&type=${type}`,
